@@ -12,4 +12,5 @@ __pycache__/
 venv/
 audiobooks/
 output/
+rvc_lightweight.7z
 

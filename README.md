@@ -145,6 +145,8 @@ docker run --rm -it --runtime=nvidia --gpus all audiobook_maker -- /bin/bash
 
 ### If we really want a venv:
 
+Create venv: `python3 -m venv venv` from root of repo
+
 How to startup venv: `source venv/bin/activate`
 
 ## TODOs:

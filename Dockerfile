@@ -5,7 +5,7 @@ WORKDIR /audiobook_maker
 
 # Update package lists and install required packages
 RUN apt-get update && \
-    apt-get install -y wget software-properties-common gnupg2 winbind xvfb python3-venv
+    apt-get install -y wget software-properties-common gnupg2 winbind xvfb
 
 
 # ************ Wine Setup ************
@@ -33,6 +33,10 @@ ENV WINEDEBUG=fixme-all
 RUN apt-get update && \
     apt-get install -y python3-pip python3-venv 
 
+
+#  Setup other packages
+RUN apt-get update && \
+    apt-get install -y git ffmpeg p7zip
 
 
 COPY . . 
